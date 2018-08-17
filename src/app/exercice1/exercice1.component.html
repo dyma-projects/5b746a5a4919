@@ -1,0 +1,26 @@
+<ul class="list-group">
+  <li class="list-group-item" (click)="GetColor('red')">Rouge</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+<hr />
+<div class="input-group mb-3">
+  <div class="input-group-append">
+    <span class="input-group-text" id="basic-addon3">Entré la couleur</span>
+  </div>
+  <input type="text" class="form-control" placeholder="exemple : text"   >
+</div>
+
+<div [style.backgroundColor]="color">
+  <p >
+    {{valeur}}
+  </p>
+</div>
+<div>
+  <input [(ngModel)]="nom" />
+</div>
+
+<div>{{nom}}</div>
+
