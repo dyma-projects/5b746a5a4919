@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-exercice3',
@@ -7,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exercice3Component implements OnInit {
 
-  constructor() { }
+  constructor() {
+    this.statut = true;
+   }
+  public statut:boolean;
 
+  Inverse():void{
+    this.statut=!this.statut;
+  }
   ngOnInit() {
   }
 
