@@ -10,10 +10,10 @@ export class Exercice1Component implements OnInit {
   constructor() { }
   public color: string;
   public nom: string;
-  public valeur: string="valeur default";
 
-  GetColor(color:string):void{
+  GetColor(color: string): void {
     this.color = color;
+    this.nom ='La couleur change selon la séléclition'
   }
 
   ngOnInit() {

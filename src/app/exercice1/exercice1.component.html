@@ -1,26 +1,22 @@
 <ul class="list-group">
   <li class="list-group-item" (click)="GetColor('red')">Rouge</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
+  <li class="list-group-item" (click)="GetColor('blue')">Bleu</li>
 </ul>
 <hr />
+
+
 <div class="input-group mb-3">
   <div class="input-group-append">
-    <span class="input-group-text" id="basic-addon3">Entré la couleur</span>
+    <span  class="input-group-text" id="basic-addon3">Entré du texte</span>
   </div>
-  <input type="text" class="form-control" placeholder="exemple : text"   >
+  <input [(ngModel)]="nom" 
+    [style.backgroundColor]="color"      
+    type="text" class="form-control" placeholder="exemple : text"   >
 </div>
 
-<div [style.backgroundColor]="color">
-  <p >
-    {{valeur}}
-  </p>
-</div>
 <div>
-  <input [(ngModel)]="nom" />
+  <span  class="input-group-text" id="basic-addon3">Vous avez saisi</span>
+  <textarea name="Text" id="" cols="30" rows="10">{{nom}}</textarea>
 </div>
 
-<div>{{nom}}</div>
 
